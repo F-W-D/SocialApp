@@ -19,10 +19,12 @@ struct PostRow: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
+                    .shadow(color: .black, radius: 1)
                 
                 Text(post.user.username)
                     .foregroundColor(.white)
                     .fontWeight(.bold)
+                    .shadow(color: .black, radius: 1)
                 
                 Spacer(minLength: 0)
                 
@@ -65,6 +67,7 @@ struct PostRow: View {
                 Text(post.title)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
+                    .shadow(color: .black, radius: 1)
                 
                 Spacer(minLength: 0)
             }
@@ -78,10 +81,11 @@ struct PostRow: View {
                     .font(.caption)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
+                    .shadow(color: .black, radius: 1)
             }
         }
         .padding()
-        .background(Color("bg").opacity(0.3))
+        .background(Color("bg").opacity(0.5))
         .border(Color.gray.opacity(0.3), width: 0.3)
         .cornerRadius(15)
         .shadow(color: Color.black.opacity(0.3), radius: 3, x: 3, y: 3)

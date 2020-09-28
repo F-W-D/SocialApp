@@ -91,7 +91,6 @@ struct Register: View {
         .sheet(isPresented: $registerData.picker, content: {
             ImagePicker(picker: $registerData.picker, img_Data: $registerData.image_Data)
         })
-        .preferredColorScheme(.dark)
     }
 }
 

@@ -37,7 +37,7 @@ struct CustomTabbar: View {
                                self.showPopUp.toggle()
                             }
                         }
-                        TabButton(title: "Settings", selectedTab: $selectedTab)
+                        TabButton(title: "Profile", selectedTab: $selectedTab)
                     }
                     .padding(.horizontal, 30.0)
                     .padding(.bottom, 15.0)
@@ -92,8 +92,10 @@ struct TabButton : View {
             
             VStack(spacing: 5){
                 
-                Image(title)
+                let name = title == "Posts" ? "doc.richtext" : "rectangle.stack.person.crop"
+                Image(systemName: name)
                     .renderingMode(.template)
+                    .font(.headline)
                 
                 Text(title)
                     .font(.caption)

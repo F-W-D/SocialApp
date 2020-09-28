@@ -15,8 +15,8 @@ struct Home: View {
                 PostView()
                     .opacity(selectedTab == "Posts" ? 1 : 0)
                 
-                SettingsView()
-                    .opacity(selectedTab == "Settings" ? 1 : 0)
+                ProfileView()
+                    .opacity(selectedTab == "Profile" ? 1 : 0)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             

@@ -1,7 +1,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct SettingsView: View {
+struct ProfileView: View {
     var edges = UIApplication.shared.windows.first?.safeAreaInsets
     @StateObject var settingsData = SettingsViewModel()
     var body: some View {
@@ -10,7 +10,7 @@ struct SettingsView: View {
             
             HStack{
                 
-                Text("Settings")
+                Text("Profile")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
@@ -37,7 +37,7 @@ struct SettingsView: View {
                     if settingsData.isLoading{
                         
                         ProgressView()
-                            .progressViewStyle(CircularProgressViewStyle(tint: Color("accent")))
+                            .progressViewStyle(CircularProgressViewStyle(tint: Color("title")))
                     }
                 }
                 .padding(.top,25)
@@ -52,6 +52,7 @@ struct SettingsView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
+                    .shadow(color: .black, radius: 1)
                 
                 // Edit Button...
                 
@@ -69,6 +70,7 @@ struct SettingsView: View {
                 
                 Text(settingsData.userInfo.bio)
                     .foregroundColor(.white)
+                    .shadow(color: .black, radius: 1)
                 
                 // Edit Button...
                 
