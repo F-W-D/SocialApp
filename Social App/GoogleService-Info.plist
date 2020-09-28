@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>354221096390-2vftlmi4a0k920ka0i3b8iqhn36ooklv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.354221096390-2vftlmi4a0k920ka0i3b8iqhn36ooklv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBuVzAYlWHy6m2K8yTLdH5VryOGn1kPG8k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>354221096390</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.fwd.social</string>
+	<key>PROJECT_ID</key>
+	<string>fwd-social</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fwd-social.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:354221096390:ios:2fdc6587ce8c86c45a46c7</string>
+	<key>DATABASE_URL</key>
+	<string>https://fwd-social.firebaseio.com</string>
+</dict>
+</plist>
