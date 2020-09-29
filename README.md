@@ -16,4 +16,10 @@ The app is currently in Firebase's development mode and uses phone auth to regis
 
 *verification: 123456*
 
+# Launch/Login, Dark Mode, & Scrolling Feed
+
+<img align="left" src="https://github.com/F-W-D/SocialApp/blob/develop/Github/images/Gif%201%20-%20Launch%20&%20Login.gif?raw=true" width="270" height="480" />
+<img align="right" src="https://github.com/F-W-D/SocialApp/blob/develop/Github/images/Gif%202%20-%20Feed.gif?raw=true" width="270" height="480" />
+<img src="https://github.com/F-W-D/SocialApp/blob/develop/Github/images/Gif%203%20-%20Dark%20Mode.gif?raw=true" width="270" height="480" />
+
 ###### Technical support: pj@fwd.dance
