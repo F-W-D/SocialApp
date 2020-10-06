@@ -195,15 +195,14 @@
 		AD049C5B250FA46A0097514A /* Social App */ = {
 			isa = PBXGroup;
 			children = (
+				BB938DE4251FFA8B0074EC3B /* AppDelegate.swift */,
+				AD049C5E250FA46A0097514A /* ContentView.swift */,
+				AD049C5C250FA46A0097514A /* SocialApp.swift */,
 				AD049C8B250FA71C0097514A /* ViewModel */,
 				AD049C8A250FA7170097514A /* View */,
 				AD049C89250FA7120097514A /* Model */,
 				BB938E22252082510074EC3B /* ViewModifiers */,
 				BB938DE925205F150074EC3B /* Extensions */,
-				AD049C5C250FA46A0097514A /* SocialApp.swift */,
-				BB938DE4251FFA8B0074EC3B /* AppDelegate.swift */,
-				AD049C5E250FA46A0097514A /* ContentView.swift */,
-				BB938E932521C87C0074EC3B /* SplashScreen.swift */,
 				BB6D6C91251EE6A200A9114D /* GoogleService-Info.plist */,
 				AD049C60250FA46D0097514A /* Assets.xcassets */,
 				AD049C65250FA46D0097514A /* Info.plist */,
@@ -241,11 +240,11 @@
 		AD049C89250FA7120097514A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AD049C98250FB6390097514A /* UploadImage.swift */,
-				AD83FF0F251106E10030245B /* UserModel.swift */,
 				AD83FF1125110B490030245B /* AlertView.swift */,
 				AD9ADF5A25125A7A00837EBF /* PostModel.swift */,
 				AD9ADF5C25125B9D00837EBF /* FetchUser.swift */,
+				AD049C98250FB6390097514A /* UploadImage.swift */,
+				AD83FF0F251106E10030245B /* UserModel.swift */,
 				BB6D6CBC251F087800A9114D /* YouTubeControlState.swift */,
 			);
 			path = Model;
@@ -254,17 +253,18 @@
 		AD049C8A250FA7170097514A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AD049C8C250FA7270097514A /* Login.swift */,
-				AD049C90250FAE280097514A /* Register.swift */,
-				AD049C96250FB2970097514A /* ImagePicker.swift */,
+				AD83FF0B251104970030245B /* CustomTabbar.swift */,
 				AD049C9A250FB85A0097514A /* Home.swift */,
+				AD049C96250FB2970097514A /* ImagePicker.swift */,
+				AD049C8C250FA7270097514A /* Login.swift */,
+				AD9ADF60251261E100837EBF /* NewPost.swift */,
+				AD9ADF5E25125E1100837EBF /* PostRow.swift */,
 				AD83FF05251104700030245B /* PostView.swift */,
 				AD83FF092511048E0030245B /* ProfileView.swift */,
-				AD83FF0B251104970030245B /* CustomTabbar.swift */,
-				AD9ADF5E25125E1100837EBF /* PostRow.swift */,
-				AD9ADF60251261E100837EBF /* NewPost.swift */,
-				BB6D6C9F251F064B00A9114D /* YouTubeView.swift */,
+				AD049C90250FAE280097514A /* Register.swift */,
+				BB938E932521C87C0074EC3B /* SplashScreen.swift */,
 				BB938DBE251FF6510074EC3B /* TestView.swift */,
+				BB6D6C9F251F064B00A9114D /* YouTubeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,8 +284,8 @@
 		BB938DE925205F150074EC3B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BB938DEA25205F370074EC3B /* String+Extension.swift */,
 				BB938E9B2521DD5B0074EC3B /* AnyTransition+Extension.swift */,
+				BB938DEA25205F370074EC3B /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,8 +293,8 @@
 		BB938E22252082510074EC3B /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
-				BB938E23252082760074EC3B /* TextFieldClearButton.swift */,
 				BB938E5025215FF40074EC3B /* DarkModeViewModifier.swift */,
+				BB938E23252082760074EC3B /* TextFieldClearButton.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";

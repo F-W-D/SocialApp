@@ -68,9 +68,6 @@ struct SplashScreen: View {
                 .onAppear() {
                     self.squareColor = background
                 }
-            
-            Spacer()
-            
         }
         .background(background)
         .edgesIgnoringSafeArea(.all)
@@ -78,16 +75,17 @@ struct SplashScreen: View {
 }
 
 extension SplashScreen {
+    
     var uAnimationDuration: Double { return 1.0 }
     var uAnimationDelay: Double { return  0.2 }
     var uExitAnimationDuration: Double { return 0.3 }
-    var finalAnimationDuration: Double { return 0.4 }
+    var finalAnimationDuration: Double { return 0.5 }
     var minAnimationInterval: Double { return 0.1 }
-    var fadeAnimationDuration: Double { return 0.6 }
+    var fadeAnimationDuration: Double { return 0.5 }
     
     func handleAnimations() {
         runAnimationPart1()
-        runAnimationPart2()
+        //runAnimationPart2()
         runAnimationPart3()
         if SplashScreen.shouldAnimate {
             restartAnimation()
@@ -155,7 +153,13 @@ extension SplashScreen {
 }
 
 struct CircleAnimation: Shape {
+    
     var percent: Double
+    
+    var animatableData: Double {
+        get { return percent }
+        set { percent = newValue }
+    }
     
     func path(in rect: CGRect) -> Path {
         let end = percent * 360
@@ -169,17 +173,15 @@ struct CircleAnimation: Shape {
         
         return p
     }
-    
-    var animatableData: Double {
-        get { return percent }
-        set { percent = newValue }
-    }
+
 }
 
 #if DEBUG
 struct SplashScreen_Previews : PreviewProvider {
     static var previews: some View {
         SplashScreen()
+            .preferredColorScheme(.light)
+            
     }
 }
 #endif

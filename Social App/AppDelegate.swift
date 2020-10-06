@@ -12,7 +12,7 @@ class AppDelegate : NSObject, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        print("Recieved a remote notification: \(userInfo)")
+        print("Received a remote notification: \(userInfo)")
     }
     
 }

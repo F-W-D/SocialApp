@@ -10,7 +10,7 @@ struct SocialApp: App {
         WindowGroup {
             ContentView()
                 .onOpenURL(perform: { url in
-                    //Auth.auth().canHandle(url)
+                    Auth.auth().canHandle(url)
                 })
                 .modifier(DarkModeViewModifier())
         }

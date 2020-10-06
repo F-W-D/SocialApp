@@ -8,9 +8,7 @@ struct ContentView: View {
     var body: some View {
 
         NavigationView{
-            
             VStack{
-                
                 if showSplash {
                     SplashScreen()
                       .opacity(showSplash ? 1 : 0)
@@ -23,8 +21,11 @@ struct ContentView: View {
                         }
                       }
                 } else {
-                    if status{Home().transition(.fade(duration: 1.5))}
-                    else{Login().transition(.fade(duration: 1.5))}
+                    if status{
+                        Home().transition(.fade(duration: 1.5))
+                    } else {
+                        Login().transition(.fade(duration: 1.5))
+                    }
                 }
             }
             .navigationBarHidden(true)
